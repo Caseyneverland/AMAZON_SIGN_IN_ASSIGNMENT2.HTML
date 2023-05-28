@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Title</title>
+            <style>
+                body {
+                    background-color: #f2f2f2;
+                    font-family: Arial, sans-serif;
+                    box-shadow: 0 0 10px rgba(0, 0, 0);
+                }
+
+                .container {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #fff;
+                    border: 1px solid #cebbbb;
+                    border-radius: 4px;
+                    box-shadow: 0 0 10px rgb(0, 0, 0);
+                }
+
+                .image {
+                    width: 100%;
+                    height: auto;
+                }
+                
+                .logo {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 200px;
+                    height: auto;
+                    object-fit: contain;
+                    box-shadow: 0 2px 4px rgb(2, 0, 0);
+                }                
+
+                h2 {
+                    text-align: center;
+                    background-image: linear-gradient(to right, #ff9900, #f60303);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: textGradient 3s infinite alternate;
+                 }
+
+                 @keyframes textGradient {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    100% {
+                        background-position: 100% 50%;
+                    }
+                 }
+
+                .form-group {
+                    margin-bottom: 15px;
+                }
+
+                .form-group label {
+                    display: block;
+                    font-weight: bold;
+                }
+
+                .form-group input[type="text"],
+                .form-group input[type="password"] {
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+
+                .form-group input[type="submit"] {
+                    background-color: #ff9900;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                .form-group input[type="submit"]:hover {
+                    background-color: #ffad33;
+                }
+
+                .bottom-logo-container {
+                    position: fixed;
+                    bottom: o;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background-color: #fff;
+                    padding: 10px 0;
+                    border-top: 1px soloid #ccc;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 style="background-image: linear-gradient(to right, #ff9900, #f60303); background-clip: text;-webkit-background-clip: text; -webkit-text-fill-color: transparent;">Amazon Sign-in</h2>
+            <hr 
+              style="border: none; height: 2px; background-image: linear-gradient(to right, #faf9f8, #f87c01, #ffffff); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);"
+              />
+        <img class="image" src="IMG_amazon_woman_warrior.jpeg" width= 600px; alt="Background Image">
+        
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password"></label>
+                </div>
+                <div class="form-group">
+                    <img class="logo" src="IMG_Amazon-Emblem.jpg">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Sign In">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+<!-- 1. CSS Styling:
+. The body element has a backgroound color of #f2f2f2 to set the overall background color of the page.
+It also has a box shadow property to add a black shadow ar ound the entire project.
+. The container class defines the styling for the main container. It sets the maximum 
+width, margin, padding, background color, border, border radius, and box shadow.
+. The image class sets the width to 100% and the height to auto, ensuring that the image scales proportionally.
+. The logo class styles the Amazon logo. It sets the display to block, centers it horizontally, sets the
+maximum width and height and uses object-fit: contain to maintain the logos aspect
+ratio. It also adds a black box shadow effect around the logo.
+. The h2 styling sets the text alignment to center and applie a gradient background using a linear gradient
+function. It uses the background clip property to apply the gradient only to the text, making the text transparent
+and allowing the gradient to show through. The web kit rext fill color property is set
+to transparent for cross browser compatability. The animation property adds a gradient animation effect.
+. The form group class styles the form elements. It sets the margin bottom and adds
+styles to the input fields and submit button.-->
+
+<!-- 2. HTML Structure:
+. The HTML structure starts with the <!DOCTYPE html> decloration and the opening HTML tag.
+. The head section contains the title oif the document and embedded CSS Styles.
+. The body section contains the content of the page.
+. Inside the dic class container ther is an h2 element for the Amazon sign in heading.
+it has an inline style to apply the gradient background.
+. The hr element add a horizontal line below the heading with a gradient background and a box 
+shadow effect.
+. The img element displays the background image with a specified width and alt attribute.
+. The form contains the form elements, including the input fields and the Amazon logo image.
+. The input fields have labels and place holders for the username and password.
+. The Amazon logo is wrapped inside a div with the class form group.
+. Finally there is a inpout submit button for signing in.
+
+Thats a breakkdown of how the code works. It applies styles to create to create a visually
+apppealing sign in form with a gradient background, animations, shadows, and an Amazon logo. -->
